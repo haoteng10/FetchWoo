@@ -11,8 +11,9 @@ Prerequisite:
 
  ## 2. Setup
  - In the root directory, create a file called `.env`
- - Modify the following and paste this in `.env`
+ - Modify the following and paste this section in `.env`
 > CONSUMER_KEY= Put your consumer key here 
+
 > CONSUMER_SECRET= Put your consumer secret here
 - Run `npm install` in the root directory
 
