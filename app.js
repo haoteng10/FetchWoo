@@ -19,16 +19,14 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
-app.get('/test', (req, res) => {
+app.get('/debug', (req, res) => {
   // List products
   api.get("products", {
     per_page: 20, // 20 products per page
   })
     .then((response) => {
       // Successful request
-      console.log("Success!");
-      res.json(response.data);
-      console.log("Total of items:", response.headers['x-wp-total']);
+      res.render('debug', {data: response.data});
     })
     .catch((error) => {
       console.log("Error!");
@@ -61,7 +59,6 @@ app.get('/retrieve', async (req, res) => {
     });
   });
   
-  // res.json(filteredResult);
   res.render('retrieve', {filteredResult});
 });
 

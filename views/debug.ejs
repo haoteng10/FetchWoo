@@ -1,0 +1,14 @@
+<%- include ("./partials/header") %> 
+
+<div class="container">
+    <h1>Debug Page</h1>
+    
+    <pre class="json-view">
+        <code>
+            <%= JSON.stringify(data, null, 4) %> 
+        </code>
+    </pre>
+    
+</div>
+
+<%- include ("./partials/footer") %> 
