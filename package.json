@@ -1,12 +1,13 @@
 {
   "name": "fetch-woo",
   "version": "1.0.0",
-  "description": "",
+  "description": "A program to fetch items from WooCommerce Plugin",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
-  "author": "",
+  "author": "Hao Teng",
   "license": "ISC",
   "dependencies": {
     "@woocommerce/woocommerce-rest-api": "^1.0.1",

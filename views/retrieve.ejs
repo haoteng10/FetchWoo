@@ -1,0 +1,37 @@
+<%- include ("./partials/header") %> 
+
+<div class="container">
+    <h1>Data</h1>
+    
+    <% Object.keys(filteredResult).forEach((category) => { %>
+        <h5><%= category %></h5>
+        <table>
+            <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Slug</th>
+                  <th>Attributes (Options)</th>
+              </tr>
+            </thead>
+    
+            <tbody>
+                <% filteredResult[category].forEach((item) => { %>
+                    <tr>
+                        <td><%= item.name %> </td>
+                        <td><%= item.slug %> </td>
+                        <td><% item.attributes.forEach((attribute) => { %>
+                            <%= attribute.name %> (
+                                <% attribute.options.forEach((option) => { %>
+                                    <%= option %> 
+                                <% }) %>
+                            )
+                        <% }) %> </td>
+                    </tr>
+                <% }) %> 
+            </tbody>
+          </table>
+    <% }) %>
+
+</div>
+
+<%- include ("./partials/footer") %> 
