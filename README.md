@@ -17,7 +17,7 @@ Prerequisite:
 ## 2. Setup
 
 - In the root directory, create a file called `.env`
-- Modify the following and paste this section in `.env`
+- Modify the following and paste these 3 lines in `.env`
 > CONSUMER_KEY= Put your consumer key here
 
 > CONSUMER_SECRET= Put your consumer secret here
