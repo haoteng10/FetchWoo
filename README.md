@@ -28,5 +28,4 @@ Prerequisite:
 
 ## 3. Run
 
-- Go to the root directory
 - Run `npm run start` in the root directory
