@@ -6,7 +6,7 @@ require('dotenv').config();
 const WooCommerceRestApi = require("@woocommerce/woocommerce-rest-api").default;
 
 const api = new WooCommerceRestApi({
-  url: "http://localhost",
+  url: process.env.URL,
   consumerKey: process.env.CONSUMER_KEY,
   consumerSecret: process.env.CONSUMER_SECRET,
   version: "wc/v3"
