@@ -8,7 +8,7 @@ Things needed:
 
 - WooCommerce API Consumer Key
 - WooCommerce API Consumer Secret
-> Note: Currently, WooCommerce API Key only needs READ access.
+> Note: Currently, the WooCommerce API Key only needs READ access.
 - WordPress URL
 
 Prerequisite:
@@ -22,7 +22,7 @@ Prerequisite:
 
 > CONSUMER_SECRET= Put your consumer secret here
 
-> URL= Put your WordPress URL here (ex. https://example.com)
+> URL= Put your WordPress URL here (ex. https://example.com/)
 
 - Run `npm install` in the root directory
 

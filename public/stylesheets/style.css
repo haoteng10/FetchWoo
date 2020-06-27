@@ -13,3 +13,7 @@ table {
 .json-view {
     border: #00bcd4 solid 3px;
 }
+
+footer {
+    margin-top: 50px;
+}
